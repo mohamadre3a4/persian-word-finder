@@ -1,13 +1,14 @@
-def readFile(file_name):
+def createDictionary(file_name):
     words = []
     word_list_file = open(file_name)
     for word in word_list_file:
         words.append(word)
     word_list_file.close()
+    return words
 
 
-def main:
-    readFile('words.txt')
+def main():
+    words = createDictionary('words.txt')
     n = int(input('how many letters do you have? '))
     print('write each of them and enter')
 
@@ -37,3 +38,5 @@ def main:
 
     for word in candidate_words:
         print(word)
+
+main()
